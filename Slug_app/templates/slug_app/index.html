@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>V is gay</h1>
+
+  {% for Food in Food %}
+  <a href="{% url 'food_detail' Food.slug %}">
+    {{ Food.name }}
+</a>
+
+    <br>
+    {{Food.price}}
+    <br>
+    <br>
+    <br>
+  {% endfor %}
+
+</body>
+</html>
